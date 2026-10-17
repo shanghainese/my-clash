@@ -62,8 +62,7 @@ dns:
     - 223.5.5.5
   nameserver:
     - https://private.canadianshield.cira.ca/dns-query
-    - https://fdns1.dismail.de/dns-query
-    - https://fdns2.dismail.de/dns-query
+    - https://games.12161805.xyz:8443/dns-query/sze
     - https://doh.applied-privacy.net/query
  
 # 出站策略，根据自己情况调整每个策略里分组排序，增删都可以，比如把美国自动放到第一个，比如删除香港故转，注意别漏掉表情逗号等。
