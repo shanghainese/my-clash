@@ -103,8 +103,11 @@ proxy-groups:
 rules:
 # QNAP/NAS直连
   - DOMAIN-SUFFIX,myqnapcloud.com,DIRECT
+  - SRC-IP-CIDR,192.168.9.146/32,DIRECT,no-resolve
+  - SRC-IP-CIDR,192.168.9.157/32,DIRECT,no-resolve
   - SRC-IP-CIDR,192.168.9.228/32,DIRECT,no-resolve
   - SRC-IP-CIDR,192.168.9.242/32,DIRECT,no-resolve
+
   
   - AND,((RULE-SET,cn!_domain),(DST-PORT,443),(NETWORK,UDP)),REJECT
   - RULE-SET,private_ip,DIRECT,no-resolve
