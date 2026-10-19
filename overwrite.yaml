@@ -60,6 +60,7 @@ dns:
     - "+.market.xiaomi.com"
   default-nameserver:
     - 223.5.5.5
+    - 119.29.29.29
   nameserver:
     - https://private.canadianshield.cira.ca/dns-query
     - https://games.12161805.xyz:8443/dns-query/sze
