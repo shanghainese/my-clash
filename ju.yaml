@@ -96,6 +96,7 @@ proxy-groups:
 rules:
   - DOMAIN-SUFFIX,myqnapcloud.com,DIRECT
   - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-KEYWORD,tencent,DIRECT
   - DOMAIN-SUFFIX,ximalaya.com,DIRECT
   - SRC-IP-CIDR,192.168.9.146/32,DIRECT,no-resolve
   - SRC-IP-CIDR,192.168.9.157/32,DIRECT,no-resolve
