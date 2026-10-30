@@ -95,6 +95,16 @@ proxy-groups:
 # 规则匹配
 rules:
   - DOMAIN-SUFFIX,myqnapcloud.com,DIRECT
+  - DOMAIN-SUFFIX,appldnld.apple.com,DIRECT
+  - DOMAIN-SUFFIX,phobos.apple.com,DIRECT
+  - DOMAIN-SUFFIX,updates-http.cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+  - DOMAIN-SUFFIX,blobstore.apple.com,DIRECT
+  - DOMAIN-SUFFIX,swcdn.apple.com,DIRECT
+  - DOMAIN-SUFFIX,swdist.apple.com,DIRECT
+  - DOMAIN-SUFFIX,swquery.apple.com,DIRECT
+  - DOMAIN-SUFFIX,swdownload.apple.com,DIRECT
+
   - DOMAIN-SUFFIX,qq.com,DIRECT
   - DOMAIN-KEYWORD,tencent,DIRECT
   - DOMAIN-SUFFIX,ximalaya.com,DIRECT
