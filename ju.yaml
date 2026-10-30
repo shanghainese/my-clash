@@ -110,6 +110,7 @@ rules:
   - DOMAIN-SUFFIX,ximalaya.com,DIRECT
   - SRC-IP-CIDR,192.168.9.228/32,DIRECT,no-resolve
   - SRC-IP-CIDR,192.168.9.242/32,DIRECT,no-resolve
+  - SRC-IP-CIDR,192.168.9.249/32,DIRECT,no-resolve
   
   - AND,((RULE-SET,cn!_domain),(DST-PORT,443),(NETWORK,UDP)),REJECT
   - RULE-SET,private_ip,DIRECT,no-resolve
