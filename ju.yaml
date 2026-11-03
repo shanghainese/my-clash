@@ -104,9 +104,9 @@ rules:
   - DOMAIN-SUFFIX,swdist.apple.com,DIRECT
   - DOMAIN-SUFFIX,swquery.apple.com,DIRECT
   - DOMAIN-SUFFIX,swdownload.apple.com,DIRECT
-
   - DOMAIN-SUFFIX,qq.com,DIRECT
   - DOMAIN-KEYWORD,tencent,DIRECT
+  - DOMAIN-KEYWORD,linksys,USA-BWH
   - DOMAIN-SUFFIX,ximalaya.com,DIRECT
   - SRC-IP-CIDR,192.168.9.228/32,DIRECT,no-resolve
   - SRC-IP-CIDR,192.168.9.242/32,DIRECT,no-resolve
