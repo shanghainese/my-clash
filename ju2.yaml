@@ -75,6 +75,10 @@ dns:
   fallback-filter:
     geosite:
       - geolocation-!cn
+  nameserver-policy:
+    rule-set:youtube_domain:
+      - https://games.shanghainese.uk:8443/dns-query/sze
+      - https://games.lslnyjq.uk:8443/dns-query/sze
   prefer-h3: true
   proxy-server-nameserver:
     - https://games.14921004.xyz:8443/dns-query/sze
