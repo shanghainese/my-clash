@@ -59,11 +59,11 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   nameserver:
-    - https://games.shanghainese.uk:8443/dns-query/sze
     - https://games.12161805.xyz:8443/dns-query/sze
-    - https://games.14921004.xyz:8443/dns-query/sze
-    - https://games.lslnyjq.uk:8443/dns-query/sze
     - https://private.canadianshield.cira.ca/dns-query
+    - https://fdns1.dismail.de/dns-query
+    - https://fdns2.dismail.de/dns-query
+    - https://doh.applied-privacy.net/query
  
 # 出站策略（精简统一，保留 🚀默认代理、♻️自动选择、🔯故障转移、🌐手动选择、DIRECT）
 proxy-groups:
