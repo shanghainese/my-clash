@@ -64,6 +64,9 @@ dns:
   nameserver:
     - https://223.5.5.5/dns-query
     - https://doh.pub/dns-query
+  direct-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://doh.pub/dns-query
   direct-nameserver-follow-policy: true
   fallback:
     - https://games.14921004.xyz:8443/dns-query/sze
