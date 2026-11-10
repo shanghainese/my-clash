@@ -67,7 +67,7 @@ dns:
   direct-nameserver-follow-policy: true
   fallback:
     - https://games.14921004.xyz:8443/dns-query/sze
-    - https://games.shanghainese.uk:8443/dns-query/sze
+    - https://ds.cf105.us.ci/dns-query/sze
     - https://games.lslnyjq.uk:8443/dns-query/sze
   fallback-filter:
     geosite:
@@ -79,7 +79,7 @@ dns:
   prefer-h3: true
   proxy-server-nameserver:
     - https://games.14921004.xyz:8443/dns-query/sze
-    - https://games.shanghainese.uk:8443/dns-query/sze
+    - https://ds.cf105.us.ci/dns-query/sze
     - https://games.lslnyjq.uk:8443/dns-query/sze
   respect-rules: true
   use-hosts: true
