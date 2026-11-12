@@ -66,7 +66,7 @@ dns:
     - https://doh.pub/dns-query
   direct-nameserver-follow-policy: true
   fallback:
-    - https://games.14921004.xyz:8443/dns-query/sze
+    - https://ds.cf105.cc.cd/dns-query/sze
     - https://ds.cf105.us.ci/dns-query/sze
     - https://games.lslnyjq.uk:8443/dns-query/sze
   fallback-filter:
@@ -74,11 +74,11 @@ dns:
       - geolocation-!cn
   nameserver-policy:
     rule-set:youtube_domain:
-      - https://games.14921004.xyz:8443/dns-query/sze
-      - https://games.12161805.xyz:8443/dns-query/sze
+      - https://ds.cf105.cc.cd/dns-query/sze
+      - https://games.lslnyjq.uk:8443/dns-query/sze
   prefer-h3: true
   proxy-server-nameserver:
-    - https://games.14921004.xyz:8443/dns-query/sze
+    - https://ds.cf105.cc.cd/dns-query/sze
     - https://ds.cf105.us.ci/dns-query/sze
     - https://games.lslnyjq.uk:8443/dns-query/sze
   respect-rules: true
