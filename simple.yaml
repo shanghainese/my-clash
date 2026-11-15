@@ -50,33 +50,40 @@ dns:
   fake-ip-range: 198.18.0.0/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
+    - "*"
     - "+.lan"
     - "+.local"
     - "+.market.xiaomi.com"
-    - "time.nwt.com"
-    - "time.apple.com"
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-  nameserver:
-    - https://223.5.5.5/dns-query
-    - https://doh.pub/dns-query
-  direct-nameserver:
-    - https://223.5.5.5/dns-query
-    - https://doh.pub/dns-query
-  direct-nameserver-follow-policy: true
-  fallback:
-    - https://games.14921004.xyz:8443/dns-query/sze
-    - https://games.shanghainese.uk:8443/dns-query/sze
-    - https://games.lslnyjq.uk:8443/dns-query/sze
-  fallback-filter:
-    geosite:
-      - geolocation-!cn
-  prefer-h3: true
+
+  # 1. 节点域名解析：纯境外 DoH，防止代理节点域名泄漏给国内
   proxy-server-nameserver:
     - https://games.14921004.xyz:8443/dns-query/sze
     - https://games.shanghainese.uk:8443/dns-query/sze
     - https://games.lslnyjq.uk:8443/dns-query/sze
+
+  # 2. 默认全局 DNS：直接走境外 DoH（所有未知域名、冷门境外网站、测试域名全部走这里，绝不试探国内）
+  nameserver:
+    - https://games.14921004.xyz:8443/dns-query/sze
+    - https://games.shanghainese.uk:8443/dns-query/sze
+    - https://games.lslnyjq.uk:8443/dns-query/sze
+
+  # 3. 直连出口 DNS：配合 respect-rules 使用，走国内 DoH
+  direct-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://doh.pub/dns-query
+  direct-nameserver-follow-policy: true
+
+  # 4. 精准分流策略：仅明确属于国内的域名才发给阿里/腾讯
+  nameserver-policy:
+    "rule-set:youtube_domain":
+      - https://games.shanghainese.uk:8443/dns-query/sze
+      - https://games.lslnyjq.uk:8443/dns-query/sze
+    "geosite:cn,private":
+      - https://223.5.5.5/dns-query
+      - https://doh.pub/dns-query
   respect-rules: true
   use-hosts: true
   use-system-hosts: true
